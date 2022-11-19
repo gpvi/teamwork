@@ -7,9 +7,13 @@ class Number {
 private:
 	string input;	//输入
 	string output;	//转换后的大写数字
-	string letter[10];	//1-10大写 const
-    string allChNum[15];
-    string chNumunit[5];
+// <<<<<<< main
+// 	string letter[10];	//1-10大写 const
+//     string allChNum[15];
+//     string chNumunit[5];
+// =======
+//	string letter;	//1-10大写 const
+//>>>>>>> main
 	int length;
 	bool flag;
 	int temp;//类型
