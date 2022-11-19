@@ -7,7 +7,7 @@ class Number {
 private:
 	string input;	//输入
 	string output;	//转换后的大写数字
-	string* letter;	//1-10大写 const
+	string letter;	//1-10大写 const
 	int length;
 	bool flag;
 	int temp;//类型
