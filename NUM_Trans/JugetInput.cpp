@@ -1,45 +1,45 @@
 #include<bits/stdc++.h>
 #include "type.h"
 using namespace std;
-// string allChNum[] = {"Áã","Ò¼","·¡","Èş","ËÁ","Îé","Â½","Æâ","°Æ","¾Á","Ê°","°Û","Çª","Íò","ÒÚ"} ;
-// string bignumber[]={"Áã","Ò¼","·¡","Èş","ËÁ","Îé","Â½","Æâ","°Æ","¾Á"} ;
-// string digital_units[] ={"Ê°","°Û","Çª","Íò","ÒÚ"};
+// string allChNum[] = {"é›¶","å£¹","è´°","å","è‚†","ä¼","é™†","æŸ’","æŒ","ç–","æ‹¾","ä½°","ä»Ÿ","ä¸‡","äº¿"} ;
+// string bignumber[]={"é›¶","å£¹","è´°","å","è‚†","ä¼","é™†","æŸ’","æŒ","ç–"} ;
+// string digital_units[] ={"æ‹¾","ä½°","ä»Ÿ","ä¸‡","äº¿"};
 // const int bigl = 15;
 
 
 // class Number {
 // private:
-// 	string input;	//ÊäÈë
-// 	string output;	//×ª»»ºóµÄ´óĞ´Êı×Ö
-// 	string letter[10];	//1-10´óĞ´ const
+// 	string input;	//è¾“å…¥
+// 	string output;	//è½¬æ¢åçš„å¤§å†™æ•°å­—
+// 	string letter[10];	//1-10å¤§å†™ const
 //     // string allChNum[15];
 //     string chNumunit[5];
 // 	int length;
 // 	bool flag;
-// 	int temp;//ÀàĞÍ
+// 	int temp;//ç±»å‹
 // public:
-// 	void Init_Number();	//ÊäÈë letter³õÊ¼»¯ ÊäÈëÊı¾İinputÁ÷
-// 	bool Valid();	//ÅĞ¶ÏÊÇ·ñºÏ·¨  T/F->flag
+// 	void Init_Number();	//è¾“å…¥ letteråˆå§‹åŒ– è¾“å…¥æ•°æ®inputæµ
+// 	bool Valid();	//åˆ¤æ–­æ˜¯å¦åˆæ³•  T/F->flag
 // 	void Judge();//temp
-// 	void Trans_Number0();//Êı×Ö×ª´óĞ´ 0
-// 	void Trans_Number1();//´óĞ´×ªÊı×Ö 1
+// 	void Trans_Number0();//æ•°å­—è½¬å¤§å†™ 0
+// 	void Trans_Number1();//å¤§å†™è½¬æ•°å­— 1
 // 	void Display0();
 // 	void Display1();
 // };
 
 void Number::Judge()
 {
-    //ÁãÒ¼·¡ÈşËÁÎéÂ½Æâ°Æ¾ÁÊ°°ÛÇªÍòÒÚ
-    // {"Áã","Ò¼","·¡","Èş","ËÁ","Îé","Â½","Æâ","°Æ","¾Á","Ê°","°Û","Çª","Íò","ÒÚ"} ;
+    //é›¶å£¹è´°åè‚†ä¼é™†æŸ’æŒç–æ‹¾ä½°ä»Ÿä¸‡äº¿
+    // {"é›¶","å£¹","è´°","å","è‚†","ä¼","é™†","æŸ’","æŒ","ç–","æ‹¾","ä½°","ä»Ÿ","ä¸‡","äº¿"} ;
     string temp1 = input;
-    int f = 1;//ÅĞ¶Ï±êÊ¶·ûÓÃÓÚÅĞ¶ÏÊÇ·ñÈ«ÎªÊı×Ö»òµ¥Î»£¬È«ÎªÊı×ÖÎª0£¬·ñÔòÎª1
+    int f = 1;//åˆ¤æ–­æ ‡è¯†ç¬¦ç”¨äºåˆ¤æ–­æ˜¯å¦å…¨ä¸ºæ•°å­—æˆ–å•ä½ï¼Œå…¨ä¸ºæ•°å­—ä¸º0ï¼Œå¦åˆ™ä¸º1
 
     for(int i = 0;i<temp1.size();i = i+2)
     {
-    //ÇĞ¸îÖĞÎÄ×Ö·û
+    //åˆ‡å‰²ä¸­æ–‡å­—ç¬¦
      string a = "";
      a= a+temp1[i]+temp1[i+1];
-     //ÅĞ¶ÏÊÇ·ñÊÇÊı×Ö»òµ¥Î»
+     //åˆ¤æ–­æ˜¯å¦æ˜¯æ•°å­—æˆ–å•ä½
         for(int i = 0;i<15;i++)
         {
             if(a == allChNum[i])
@@ -55,10 +55,10 @@ void Number::Judge()
             return;
             }
         f = 1;
-        // cout<<a;//´òÓ¡µ±Ç°ÖĞÎÄ×Ö·û
+        // cout<<a;//æ‰“å°å½“å‰ä¸­æ–‡å­—ç¬¦
     //  ch.push_back(a);
     }
-    //Êä³ö²âÊÔ½á¹û´úÂë¶Ë
+    //è¾“å‡ºæµ‹è¯•ç»“æœä»£ç ç«¯
     // if(tf == 1){
     //     cout<<"error";
     // }else{
@@ -79,9 +79,3 @@ void Number::Judge()
 
     flag = 0;
 } 
-
-bool jduge(string str)
-{
-
-    return 0;
-}
