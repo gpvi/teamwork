@@ -29,6 +29,20 @@ using namespace std;
 
 void Number::Judge()
 {
+
+    int f = 1;
+    for (int i = 0; i < len; i++) {
+        if (a[i] >= '0' && a[i] <= '9') continue;
+        else {
+            f = 0;
+            break;
+        }
+    }
+    if (f == 1)flag = 0;
+    else {
+        flag = 1;
+        return;
+    }
     //零壹贰叁肆伍陆柒捌玖拾佰仟万亿
     // {"零","壹","贰","叁","肆","伍","陆","柒","捌","玖","拾","佰","仟","万","亿"} ;
     string temp1 = input;
