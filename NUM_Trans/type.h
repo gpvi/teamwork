@@ -5,18 +5,18 @@ using namespace std;
 
 class Number {
 private:
-	string input;	//ÊäÈë
-	string output;	//×ª»»ºóµÄ´óĞ´Êı×Ö
-	vector<string> letter;	//1-10´óĞ´ const
+	string input;	//è¾“å…¥
+	string output;	//è½¬æ¢åçš„å¤§å†™æ•°å­—
+	string* letter;	//1-10å¤§å†™ const
 	int length;
 	bool flag;
-	int temp;//ÀàĞÍ
+	int temp;//ç±»å‹
 public:
-	void Init_Number();	//ÊäÈë letter³õÊ¼»¯ ÊäÈëÊı¾İinputÁ÷
-	bool Valid();	//ÅĞ¶ÏÊÇ·ñºÏ·¨  T/F->flag
+	void Init_Number();	//è¾“å…¥ letteråˆå§‹åŒ– è¾“å…¥æ•°æ®inputæµ
+	bool Valid();	//åˆ¤æ–­æ˜¯å¦åˆæ³•  T/F->flag
 	void Judge();//temp
-	void Trans_Number0();//Êı×Ö×ª´óĞ´ 0
-	void Trans_Number1();//´óĞ´×ªÊı×Ö 1
+	void Trans_Number0();//æ•°å­—è½¬å¤§å†™ 0
+	void Trans_Number1();//å¤§å†™è½¬æ•°å­— 1
 	void Display0();
 	void Display1();
 };
