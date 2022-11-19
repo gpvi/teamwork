@@ -30,9 +30,9 @@ using namespace std;
 void Number::Judge()
 {
 
-    int len = strlen(a), sum = 0, f = 1;
+    int f = 1;
     for (int i = 0; i < len; i++) {
-        if (input[i] >= '0' && input[i] <= '9') sum++;
+        if (a[i] >= '0' && a[i] <= '9') continue;
         else {
             f = 0;
             break;
