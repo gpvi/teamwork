@@ -8,7 +8,7 @@ private:
 	string input;	//输入
 	string output;	//转换后的大写数字
 	string letter[10];	//1-10大写 const
-    // string allChNum[15];
+    string allChNum[15];
     string chNumunit[5];
 	int length;
 	bool flag;

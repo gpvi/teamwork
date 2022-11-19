@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include "type.h"
 using namespace std;
 // string allChNum[] = {"Áã","Ò¼","·¡","Èş","ËÁ","Îé","Â½","Æâ","°Æ","¾Á","Ê°","°Û","Çª","Íò","ÒÚ"} ;
 // string bignumber[]={"Áã","Ò¼","·¡","Èş","ËÁ","Îé","Â½","Æâ","°Æ","¾Á"} ;
